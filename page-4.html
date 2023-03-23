@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <title>Extra</title>
@@ -17,10 +17,9 @@
         </nav>
         <main></main>
         <aside>
-            <img src="michi bailando.gif">
+            <img src="michi bailando.gif" />
         </aside>
         <script>
-            
             function setup() {
                 createCanvas(windowWidth, windowHeight);
                 selectAll("a")[4].addClass("aqui");
@@ -29,16 +28,16 @@
             }
 
             function draw() {
-                 x++;
+                x++;
                 if (x > 360) {
                     x = 0;
                 }
-                background(x,200,200);
-                text("H" + x +"° S 100% B 100%",  windowWidth-150,windowHeight-50);
+                background(x, 200, 200);
+                text("H" + x + "° S 100% B 100%", windowWidth - 150, windowHeight - 50);
             }
-            
-            function windowResized( ) {
-                resizeCanvas (windowWidth, windowHeight);
+
+            function windowResized() {
+                resizeCanvas(windowWidth, windowHeight);
             }
         </script>
     </body>

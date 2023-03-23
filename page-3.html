@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <title>PAGE 3</title>
@@ -22,7 +22,7 @@
         <script>
             var elSlider;
             function setup() {
-                createCanvas(windowWidth, windowHeight).position(0,0).style("z-index", -1);
+                createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
                 selectAll("a")[3].addClass("aqui");
                 var donde = select("p");
                 elSlider = createSlider(0, 360, 0).parent(donde);
@@ -33,9 +33,9 @@
                 background(elSlider.value(), 100, 100);
                 text("H" + elSlider.value() + "° S 100% B 100%", windowWidth - 200, windowHeight - 50);
             }
-            
-            function windowResized( ) {
-                resizeCanvas (windowWidth, windowHeight);
+
+            function windowResized() {
+                resizeCanvas(windowWidth, windowHeight);
             }
         </script>
     </body>
